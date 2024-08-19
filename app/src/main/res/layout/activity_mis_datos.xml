@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MisDatos">
+
+    <Button
+        android:id="@+id/buttonRecomendacion"
+        android:layout_width="170dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/Recomendacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMODIFICAR" />
+
+    <Button
+        android:id="@+id/buttonCSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/CSV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonJSON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/JSON"
+        app:layout_constraintStart_toEndOf="@+id/buttonCSV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonXML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/XML"
+        app:layout_constraintStart_toEndOf="@+id/buttonJSON"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCSV" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/Nombre"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextID" />
+
+    <EditText
+        android:id="@+id/editTextEstreno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/Estreno"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBORRAR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+    <EditText
+        android:id="@+id/editTextCadena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/Cadena"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEstreno" />
+
+    <EditText
+        android:id="@+id/editTextTemporadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/Temporadas"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEstreno" />
+
+    <EditText
+        android:id="@+id/editTextRecomendacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="Recomendacion"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEstreno" />
+
+    <Button
+        android:id="@+id/buttonPOST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POST"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGET"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGET" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="367dp"
+        android:layout_height="286dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMODIFICAR" />
+
+    <Button
+        android:id="@+id/buttonGET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="GET"
+        app:layout_constraintEnd_toEndOf="@+id/buttonXML"
+        app:layout_constraintTop_toBottomOf="@+id/buttonXML" />
+
+    <Button
+        android:id="@+id/buttonBORRAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Borrar"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPOST"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPOST" />
+
+    <Button
+        android:id="@+id/buttonMODIFICAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Modificar"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBORRAR"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBORRAR" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

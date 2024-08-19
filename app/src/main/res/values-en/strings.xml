@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PracticaFinalDI</string>
+    <string name="JSON">For JSON</string>
+    <string name="CSV">For CSV</string>
+    <string name="XML">For XML</string>
+    <string name="Borrar">Delete</string>
+    <string name="Modificar">Modify</string>
+    <string name="Nombre">Name</string>
+    <string name="Estreno">Premiere</string>
+    <string name="Cadena">Channel</string>
+    <string name="Temporadas">Seasons</string>
+    <string name="info">Click for more information</string>
+    <string name="Recomendacion">Recommendation</string>
+</resources>

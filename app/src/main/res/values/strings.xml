@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PracticaFinalDI</string>
+    <string name="JSON">Por JSON</string>
+    <string name="CSV">Por CSV</string>
+    <string name="XML">Por XML</string>
+    <string name="Borrar">Borrar</string>
+    <string name="Modificar">Modificar</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Estreno">Estreno</string>
+    <string name="Cadena">Cadena</string>
+    <string name="Temporadas">Temporadas</string>
+    <string name="info">Pulse para mas informacion</string>
+    <string name="Recomendacion">Recomendacion</string>
+</resources>
